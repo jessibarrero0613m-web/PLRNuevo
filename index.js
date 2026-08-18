@@ -134,7 +134,7 @@ function respuestaDirecta(textoNormalizado) {
     textoNormalizado.includes("religioso") ||
     textoNormalizado.includes("cristiano") ||
     textoNormalizado.includes("cristiana") ||
-    textoNormalizado.includes("iglesia") ||
+    textoNormalizado.includes("iglesia") 
   ) {
     const respuestasReligion = [
       `No es un libro católico como tal, ni pertenece a una religión específica 🌿
