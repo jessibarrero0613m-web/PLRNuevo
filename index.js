@@ -13,7 +13,7 @@ const openai = new OpenAI({
 const PORT = process.env.PORT || 8080;
 
 const SYSTEM_PROMPT = `
-Eres Isabella Rojas ❤️, una asistente humana, cálida, espiritual y cercana que responde dudas por WhatsApp sobre el libro digital "Cuando Dios Habla".
+Eres Jessi ❤️, una asistente humana, cálida, espiritual y cercana que responde dudas por WhatsApp sobre el libro digital "Cuando Dios Habla".
 
 Tu trabajo es responder dudas de forma NATURAL, BREVE y HUMANA, como si fueras una persona real atendiendo con cariño.
 
@@ -52,14 +52,14 @@ INFORMACIÓN REAL:
 - No es exclusivamente católico.
 - Puede estudiarse con cualquier Biblia.
 - Las referencias de apoyo son:
-  - 70 MXN como gesto de gratitud
-  - 90 MXN para apoyar el proyecto
-  - 120 MXN para que este mensaje llegue a más personas
+  - 15 Mil como gesto de gratitud
+  - 20 Mil  para apoyar el proyecto
+  - 30 Mil para que este mensaje llegue a más personas
 
 OBJETIVO:
 Después de resolver la duda de forma amable y humana, dirige suavemente a la persona al apoyo del proyecto espiritual mediante:
-- transferencia bancaria
-- depósito en Oxxo
+- Transferencia (bre-b) o Llave
+- nequi/Daviplata
 
 Haz que el cierre se sienta natural, amable y espiritual, nunca como presión de venta.
 `;
@@ -102,11 +102,11 @@ function cierrePago() {
 
 ¿Cuál método prefieres? 🙏`,
 
-    `💌 Si deseas apoyar este proyecto espiritual, puedes hacerlo por transferencia bancaria o depósito en Oxxo ✨
+    `💌 Si deseas apoyar este proyecto espiritual, puedes hacerlo por Bre-b o Llave ,  Nequi o Daviplata ✨
 
 ¿Qué método prefieres? 🙏`,
 
-    `💌 Para apoyar este proyecto espiritual puedes elegir transferencia bancaria o depósito en Oxxo ✨
+    `💌 Para apoyar este proyecto espiritual puedes elegir transferencia Bre-b o Llave ,  Nequi o Daviplata ✨
 
 ¿Cuál opción prefieres? 🙏`,
   ];
@@ -204,23 +204,23 @@ El PDF ya está enviado más arriba en este mismo chat de WhatsApp. No llega nad
       `El libro se comparte como una bendición 🙏
 
 Si nace en tu corazón apoyar este proyecto espiritual, las referencias son:
-🌿 70 MXN como gesto de gratitud
-🌿 90 MXN para apoyar el proyecto
-🌿 120 MXN para que este mensaje llegue a más personas`,
+🌿 15 Mil como gesto de gratitud
+🌿 20 Mil para apoyar el proyecto
+🌿 30 Mil para que este mensaje llegue a más personas`,
 
       `El material ya fue compartido con mucho cariño 😊
 
 Para apoyar el proyecto, puedes elegir una de estas referencias:
-🌿 70 MXN como gesto de gratitud
-🌿 90 MXN para apoyar el proyecto
-🌿 120 MXN para ayudar a que llegue a más personas`,
+🌿15 Mil como gesto de gratitud
+🌿20 Mil para apoyar el proyecto
+🌿30 Mil para ayudar a que llegue a más personas`,
 
       `Este proyecto se sostiene con el apoyo de las personas que reciben el material 🙏
 
 Puedes apoyar con:
-🌿 70 MXN como gesto de gratitud
-🌿 90 MXN para apoyar directamente el proyecto
-🌿 120 MXN para que este mensaje llegue a más personas`,
+🌿 15 Mil como gesto de gratitud
+🌿 20 Mil para apoyar directamente el proyecto
+🌿 30 Mil para que este mensaje llegue a más personas`,
     ];
 
     return agregarCierre(elegirAleatoria(respuestasPago));
