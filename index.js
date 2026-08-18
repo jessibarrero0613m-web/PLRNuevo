@@ -98,7 +98,7 @@ function limpiarRespuesta(texto) {
 
 function cierrePago() {
   const cierres = [
-    `💌 Puedes apoyar este proyecto espiritual por transferencia bancaria o depósito en Oxxo ✨
+    `💌 Puedes apoyar este proyecto espiritual por transferencia por Bre-b o Llave ,  Nequi o Daviplata ✨
 
 ¿Cuál método prefieres? 🙏`,
 
@@ -133,7 +133,8 @@ function respuestaDirecta(textoNormalizado) {
     textoNormalizado.includes("religion") ||
     textoNormalizado.includes("religioso") ||
     textoNormalizado.includes("cristiano") ||
-    textoNormalizado.includes("cristiana")
+    textoNormalizado.includes("cristiana") ||
+    textoNormalizado.includes("iglesia") ||
   ) {
     const respuestasReligion = [
       `No es un libro católico como tal, ni pertenece a una religión específica 🌿
